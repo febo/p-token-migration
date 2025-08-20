@@ -18,7 +18,7 @@ This will build the CLI, p-token and activator programs. After that, to start th
 make run
 ```
 
-## Resouces
+## Resources
 
 * `p-token` [repository](https://github.com/solana-program/token/tree/main/p-token)
 * [SIMD-0266](https://github.com/solana-foundation/solana-improvement-documents/pull/266): Efficient Token program
