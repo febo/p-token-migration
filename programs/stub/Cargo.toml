@@ -1,0 +1,19 @@
+[package]
+name = "cbmt-program-stub"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[lints.rust.unexpected_cfgs]
+level = "warn"
+check-cfg = ['cfg(target_os, values("solana"))']
+
+[features]
+custom-heap = []
+custom-panic = []
+sbf-entrypoint = []
+
+[dependencies]
+solana-program = { workspace = true }

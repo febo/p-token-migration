@@ -1,0 +1,26 @@
+[package]
+name = "p-token-migration-simulator"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "simulate"
+path = "src/main.rs"
+
+[dependencies]
+agave-feature-set = { git = "https://github.com/febo/agave.git", branch = "p-token-migration" }
+cbmt-program-activator = { workspace = true }
+cbmt-program-stub = { workspace = true }
+indicatif = { version = "0.18.0", features = ["tokio"] }
+ratatui = "0.29.0"
+solana-logger = { workspace = true }
+solana-program = { workspace = true }
+solana-rpc = { workspace = true }
+solana-rpc-client = { workspace = true }
+solana-rpc-client-api = { workspace = true }
+solana-sdk = { workspace = true }
+solana-system-interface = "1.0.0"
+solana-test-validator = { workspace = true }
+solana-transaction-status-client-types = { workspace = true }
+spl-token-interface = "1.0.0"
+tokio = { version = "1.46.1", features = ["macros", "rt-multi-thread"] }
