@@ -4,7 +4,10 @@ mod validator;
 
 use std::{
     io::Result,
-    sync::{atomic::AtomicBool, Arc},
+    sync::{
+        atomic::{AtomicBool, Ordering},
+        Arc,
+    },
     thread::sleep,
     time::Duration,
 };
@@ -100,7 +103,7 @@ async fn main() -> Result<()> {
         )
         .await;
 
-    upgraded.store(true, std::sync::atomic::Ordering::SeqCst);
+    upgraded.store(true, Ordering::SeqCst);
 
     // Sleep until CTRL+C is pressed.
     loop {
