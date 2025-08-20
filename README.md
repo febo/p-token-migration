@@ -4,7 +4,7 @@ Simple CLI to simulate `p-token` feature activation while receiving transactions
 
 ## Overview
 
-The simulation consists of starting a test validator running SPL Token and `10` "clients" submitting transfer transactions. After `10` seconds, the feature is activated and the token program is upgraded to `p-token`. At the upgrade point, some transactions are expected to fail since the program is in `DelayVisibility` mode for one slot.
+The simulation consists of starting a test validator running SPL Token and `10` "clients" submitting transfer transactions. After `10` seconds, the feature is activated and the token program is upgraded to `p-token`. At the upgrade point, some transactions are expected to fail since the program is in `DelayVisibility` mode for one slot but should quickly resume.
 
 ## How to use the CLI
 
@@ -15,7 +15,7 @@ make build
 
 This will build the CLI, p-token and activator programs. After that, to start the simulation use:
 ```bash
-make clean
+make run
 ```
 
 ## Resouces
