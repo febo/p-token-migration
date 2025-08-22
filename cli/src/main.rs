@@ -26,9 +26,9 @@ use crate::{
 
 const ELF_DIRECTORY: &str = "./target/elfs";
 
-const CLIENT_THREADS: u64 = 10;
+const CLIENT_THREADS: u64 = 25;
 
-#[tokio::main(flavor = "multi_thread", worker_threads = 22)]
+#[tokio::main(flavor = "multi_thread", worker_threads = 60)]
 async fn main() -> Result<()> {
     println!("p-token migration simulator");
     println!("---------------------------");
@@ -97,10 +97,7 @@ async fn main() -> Result<()> {
     context.wait_for_next_epoch().await;
 
     context
-        .assert_owner(
-            &SPL_TOKEN_PROGRAM_ID,
-            &solana_sdk::bpf_loader_upgradeable::id(),
-        )
+        .assert_owner(&SPL_TOKEN_PROGRAM_ID, &solana_sdk::bpf_loader::id())
         .await;
 
     upgraded.store(true, Ordering::SeqCst);

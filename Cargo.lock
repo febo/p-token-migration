@@ -43,7 +43,7 @@ version = "0.8.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b169f7a6d4742236a0a00c541b845991d0ac43e546831af1249753ab4c3aa3a0"
 dependencies = [
- "cfg-if 1.0.1",
+ "cfg-if 1.0.3",
  "cipher",
  "cpufeatures",
 ]
@@ -66,7 +66,7 @@ dependencies = [
 [[package]]
 name = "agave-banking-stage-ingress-types"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "crossbeam-channel",
  "solana-perf",
@@ -75,7 +75,7 @@ dependencies = [
 [[package]]
 name = "agave-feature-set"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "ahash 0.8.12",
  "solana-epoch-schedule",
@@ -88,7 +88,7 @@ dependencies = [
 [[package]]
 name = "agave-geyser-plugin-interface"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "log",
  "solana-clock",
@@ -96,13 +96,13 @@ dependencies = [
  "solana-signature",
  "solana-transaction",
  "solana-transaction-status",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
 ]
 
 [[package]]
 name = "agave-io-uring"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "io-uring",
  "libc",
@@ -114,7 +114,7 @@ dependencies = [
 [[package]]
 name = "agave-precompiles"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "agave-feature-set",
  "bincode",
@@ -135,7 +135,7 @@ dependencies = [
 [[package]]
 name = "agave-reserved-account-keys"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "agave-feature-set",
  "solana-pubkey",
@@ -145,7 +145,7 @@ dependencies = [
 [[package]]
 name = "agave-syscalls"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "bincode",
  "libsecp256k1",
@@ -180,13 +180,13 @@ dependencies = [
  "solana-sysvar",
  "solana-sysvar-id",
  "solana-transaction-context 3.0.0",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
 ]
 
 [[package]]
 name = "agave-transaction-view"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "solana-hash",
  "solana-message",
@@ -201,7 +201,7 @@ dependencies = [
 [[package]]
 name = "agave-verified-packet-receiver"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "solana-perf",
  "solana-streamer",
@@ -210,14 +210,14 @@ dependencies = [
 [[package]]
 name = "agave-xdp"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "aya",
  "caps",
  "crossbeam-channel",
  "libc",
  "log",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
 ]
 
 [[package]]
@@ -237,7 +237,7 @@ version = "0.8.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5a15f179cd60c4584b8a8c596927aadc462e27f2ca70c04e0071964a73ba7a75"
 dependencies = [
- "cfg-if 1.0.1",
+ "cfg-if 1.0.3",
  "getrandom 0.3.3",
  "once_cell",
  "version_check",
@@ -624,6 +624,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "atomic-waker"
+version = "1.1.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1505bd5d3d116872e7271a6d4e16d81d0c8570876c8de68093a09ac269d8aac0"
+
+[[package]]
 name = "atty"
 version = "0.2.14"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -667,7 +673,7 @@ dependencies = [
  "matchit",
  "memchr",
  "mime",
- "percent-encoding 2.3.1",
+ "percent-encoding 2.3.2",
  "pin-project-lite",
  "rustversion",
  "serde",
@@ -746,7 +752,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6806a6321ec58106fea15becdad98371e28d92ccbc7c8f1b3b6dd724fe8f1002"
 dependencies = [
  "addr2line",
- "cfg-if 1.0.1",
+ "cfg-if 1.0.3",
  "libc",
  "miniz_oxide",
  "object",
@@ -838,7 +844,7 @@ dependencies = [
  "arrayref",
  "arrayvec",
  "cc",
- "cfg-if 1.0.1",
+ "cfg-if 1.0.3",
  "constant_time_eq",
  "digest 0.10.7",
 ]
@@ -1081,9 +1087,9 @@ dependencies = [
 
 [[package]]
 name = "cc"
-version = "1.2.33"
+version = "1.2.34"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3ee0f8803222ba5a7e2777dd72ca451868909b1ac410621b676adf07280e9b5f"
+checksum = "42bc4aea80032b7bf409b0bc7ccad88853858911b7713a8062fdc0623867bedc"
 dependencies = [
  "jobserver",
  "libc",
@@ -1113,9 +1119,9 @@ checksum = "4785bdd1c96b2a846b2bd7cc02e86b6b3dbf14e7e53446c4f54c92a361040822"
 
 [[package]]
 name = "cfg-if"
-version = "1.0.1"
+version = "1.0.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9555578bc9e57714c812a1f84e4fc5b4d21fcb063490c624de019f7464c91268"
+checksum = "2fd1289c04a9ea8cb22300a459a72a385d7c73d3259e2ed7dcb2af674838cfa9"
 
 [[package]]
 name = "cfg_aliases"
@@ -1229,7 +1235,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3b79c4069c6cad78e2e0cdfcbd26275770669fb39fd308a752dc110e83b9af32"
 dependencies = [
  "castaway",
- "cfg-if 1.0.1",
+ "cfg-if 1.0.3",
  "itoa",
  "rustversion",
  "ryu",
@@ -1283,7 +1289,7 @@ version = "0.1.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a06aeb73f470f66dcdbf7223caeebb85984942f22f1adb2a088cf9668146bbbc"
 dependencies = [
- "cfg-if 1.0.1",
+ "cfg-if 1.0.3",
  "wasm-bindgen",
 ]
 
@@ -1380,7 +1386,7 @@ version = "1.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9481c1c90cbf2ac953f07c8d4a58aa3945c425b7185c9154d67a65e4230da511"
 dependencies = [
- "cfg-if 1.0.1",
+ "cfg-if 1.0.3",
 ]
 
 [[package]]
@@ -1497,7 +1503,7 @@ version = "4.1.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "97fb8b7c4503de7d6ae7b42ab72a5a59857b4c937ec27a3d4539dba95b5ab2be"
 dependencies = [
- "cfg-if 1.0.1",
+ "cfg-if 1.0.3",
  "cpufeatures",
  "curve25519-dalek-derive",
  "digest 0.10.7",
@@ -1561,7 +1567,7 @@ version = "5.5.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "978747c1d849a7d2ee5e8adc0159961c48fb7e5db2f06af6723b80123bb53856"
 dependencies = [
- "cfg-if 1.0.1",
+ "cfg-if 1.0.3",
  "hashbrown 0.14.5",
  "lock_api",
  "once_cell",
@@ -1714,7 +1720,7 @@ version = "2.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b98cf8ebf19c3d1b223e151f99a4f9f0690dca41414773390fc824184ac833e1"
 dependencies = [
- "cfg-if 1.0.1",
+ "cfg-if 1.0.3",
  "dirs-sys-next",
 ]
 
@@ -1846,7 +1852,7 @@ version = "0.8.35"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "75030f3c4f45dafd7586dd6780965a8c7e8e285a5ecb86713e63a79c5b2766f3"
 dependencies = [
- "cfg-if 1.0.1",
+ "cfg-if 1.0.3",
 ]
 
 [[package]]
@@ -2018,14 +2024,14 @@ checksum = "28dea519a9695b9977216879a3ebfddf92f1c08c05d984f8996aecd6ecdc811d"
 
 [[package]]
 name = "filetime"
-version = "0.2.25"
+version = "0.2.26"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "35c0522e981e68cbfa8c3f978441a5f34b30b96e146b33cd3359176b50fe8586"
+checksum = "bc0505cd1b6fa6580283f6bdf70a73fcf4aba1184038c90902b92b3dd0df63ed"
 dependencies = [
- "cfg-if 1.0.1",
+ "cfg-if 1.0.3",
  "libc",
  "libredox",
- "windows-sys 0.59.0",
+ "windows-sys 0.60.2",
 ]
 
 [[package]]
@@ -2106,11 +2112,11 @@ checksum = "00b0228411908ca8685dba7fc2cdd70ec9990a6e753e89b6ac91a84c40fbaf4b"
 
 [[package]]
 name = "form_urlencoded"
-version = "1.2.1"
+version = "1.2.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e13624c2627564efccf4934284bdd98cbaa14e79b0b5a141218e507b3a823456"
+checksum = "cb4cb245038516f5f85277875cdaa4f7d2c9a0fa0468de06ed190163b1581fcf"
 dependencies = [
- "percent-encoding 2.3.1",
+ "percent-encoding 2.3.2",
 ]
 
 [[package]]
@@ -2254,7 +2260,7 @@ version = "0.1.16"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8fc3cb4d91f53b50155bdcfd23f6a4c39ae1969c2ae85982b135750cccaf5fce"
 dependencies = [
- "cfg-if 1.0.1",
+ "cfg-if 1.0.3",
  "js-sys",
  "libc",
  "wasi 0.9.0+wasi-snapshot-preview1",
@@ -2267,7 +2273,7 @@ version = "0.2.16"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "335ff9f135e4384c8150d6f27c6daed433577f86b4750418338c01a1a2528592"
 dependencies = [
- "cfg-if 1.0.1",
+ "cfg-if 1.0.3",
  "js-sys",
  "libc",
  "wasi 0.11.1+wasi-snapshot-preview1",
@@ -2280,7 +2286,7 @@ version = "0.3.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "26145e563e54f2cadc477553f1ec5ee650b00862f0a58bcd12cbdc5f0ea2d2f4"
 dependencies = [
- "cfg-if 1.0.1",
+ "cfg-if 1.0.3",
  "js-sys",
  "libc",
  "r-efi",
@@ -2338,7 +2344,7 @@ version = "0.6.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "68a7f542ee6b35af73b06abc0dad1c1bae89964e4e253bc4b587b91c9637867b"
 dependencies = [
- "cfg-if 1.0.1",
+ "cfg-if 1.0.3",
  "dashmap",
  "futures 0.3.31",
  "futures-timer",
@@ -2473,7 +2479,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "03b876ecf37e86b359573c16c8366bc3eba52b689884a0fc42ba3f67203d2a8b"
 dependencies = [
  "cc",
- "cfg-if 1.0.1",
+ "cfg-if 1.0.3",
  "libc",
  "pkg-config",
  "windows-sys 0.48.0",
@@ -2624,18 +2630,20 @@ dependencies = [
 
 [[package]]
 name = "hyper"
-version = "1.6.0"
+version = "1.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "cc2b571658e38e0c01b1fdca3bbbe93c00d3d71693ff2770043f8c29bc7d6f80"
+checksum = "eb3aa54a13a0dfe7fbe3a59e0c76093041720fdc77b110cc0fc260fafb4dc51e"
 dependencies = [
+ "atomic-waker",
  "bytes",
  "futures-channel",
- "futures-util",
+ "futures-core",
  "http 1.3.1",
  "http-body 1.0.1",
  "httparse",
  "itoa",
  "pin-project-lite",
+ "pin-utils",
  "smallvec",
  "tokio",
  "want",
@@ -2666,7 +2674,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e3c93eb611681b207e1fe55d5a71ecf91572ec8a6705cdb6857f7d8d5242cf58"
 dependencies = [
  "http 1.3.1",
- "hyper 1.6.0",
+ "hyper 1.7.0",
  "hyper-util",
  "rustls 0.23.31",
  "rustls-pki-types",
@@ -2714,10 +2722,10 @@ dependencies = [
  "futures-util",
  "http 1.3.1",
  "http-body 1.0.1",
- "hyper 1.6.0",
+ "hyper 1.7.0",
  "ipnet",
  "libc",
- "percent-encoding 2.3.1",
+ "percent-encoding 2.3.2",
  "pin-project-lite",
  "socket2 0.6.0",
  "tokio",
@@ -2854,9 +2862,9 @@ dependencies = [
 
 [[package]]
 name = "idna"
-version = "1.0.3"
+version = "1.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "686f825264d630750a544639377bae737628043f20d38bbc029e8f29ea968a7e"
+checksum = "3b0875f23caa03898994f6ddc501886a45c7d3d62d04d2d90788d47be1b1e4de"
 dependencies = [
  "idna_adapter",
  "smallvec",
@@ -2983,7 +2991,7 @@ version = "0.1.13"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e0242819d153cba4b4b05a5a8f2a7e9bbf97b6055b2a002b395c96b5ff3c0222"
 dependencies = [
- "cfg-if 1.0.1",
+ "cfg-if 1.0.3",
 ]
 
 [[package]]
@@ -2993,7 +3001,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d93587f37623a1a17d94ef2bc9ada592f5465fe7732084ab7beefabe5c77c0c4"
 dependencies = [
  "bitflags 2.9.2",
- "cfg-if 1.0.1",
+ "cfg-if 1.0.3",
  "libc",
 ]
 
@@ -3083,7 +3091,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1a87aa2bb7d2af34197c04845522473242e1aa17c12f4935d5856491a7fb8c97"
 dependencies = [
  "cesu8",
- "cfg-if 1.0.1",
+ "cfg-if 1.0.3",
  "combine 4.6.7",
  "jni-sys",
  "log",
@@ -3287,7 +3295,7 @@ version = "0.7.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b67380fd3b2fbe7527a606e18729d21c6f3951633d0500574c4dc22d2d638b9f"
 dependencies = [
- "cfg-if 1.0.1",
+ "cfg-if 1.0.3",
  "winapi 0.3.9",
 ]
 
@@ -3499,9 +3507,9 @@ dependencies = [
 
 [[package]]
 name = "memmap2"
-version = "0.9.7"
+version = "0.9.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "483758ad303d734cec05e5c12b41d7e93e6a6390c5e9dae6bdeb7c1259012d28"
+checksum = "843a98750cd611cc2965a8213b53b43e715f13c37a9e096c6408e69990961db7"
 dependencies = [
  "libc",
 ]
@@ -3572,7 +3580,7 @@ version = "0.11.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4c84490118f2ee2d74570d114f3d0493cbf02790df303d2707606c3e14e07c96"
 dependencies = [
- "cfg-if 1.0.1",
+ "cfg-if 1.0.3",
  "downcast",
  "fragile",
  "lazy_static",
@@ -3587,7 +3595,7 @@ version = "0.11.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "22ce75669015c4f47b289fd4d4f56e894e4c96003ffdf3ac51313126f94c6cbb"
 dependencies = [
- "cfg-if 1.0.1",
+ "cfg-if 1.0.3",
  "proc-macro2",
  "quote",
  "syn 1.0.109",
@@ -3655,7 +3663,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "74523f3a35e05aba87a1d978330aef40f67b0304ac79c1c00b294c9830543db6"
 dependencies = [
  "bitflags 2.9.2",
- "cfg-if 1.0.1",
+ "cfg-if 1.0.3",
  "cfg_aliases",
  "libc",
  "memoffset",
@@ -3870,7 +3878,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8505734d46c8ab1e19a1dce3aef597ad87dcb4c37e7188231769bd6bd51cebf8"
 dependencies = [
  "bitflags 2.9.2",
- "cfg-if 1.0.1",
+ "cfg-if 1.0.3",
  "foreign-types",
  "libc",
  "once_cell",
@@ -3930,7 +3938,7 @@ dependencies = [
  "futures-util",
  "js-sys",
  "lazy_static",
- "percent-encoding 2.3.1",
+ "percent-encoding 2.3.2",
  "pin-project",
  "rand 0.8.5",
  "thiserror 1.0.69",
@@ -3991,7 +3999,7 @@ version = "0.8.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "60a2cfe6f0ad2bfc16aefa463b497d5c7a5ecd44a23efa72aa342d90177356dc"
 dependencies = [
- "cfg-if 1.0.1",
+ "cfg-if 1.0.3",
  "instant",
  "libc",
  "redox_syscall 0.2.16",
@@ -4005,7 +4013,7 @@ version = "0.9.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bc838d2a56b5b1a6c25f55575dfc605fabb63bb2365f6c2353ef9159aa69e4a5"
 dependencies = [
- "cfg-if 1.0.1",
+ "cfg-if 1.0.3",
  "libc",
  "redox_syscall 0.5.17",
  "smallvec",
@@ -4053,9 +4061,9 @@ checksum = "31010dd2e1ac33d5b46a5b413495239882813e0369f8ed8a5e266f173602f831"
 
 [[package]]
 name = "percent-encoding"
-version = "2.3.1"
+version = "2.3.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e3148f5046208a5d56bcfc03053e3ca6334e51da8dfb19b6cdc8b306fae3283e"
+checksum = "9b4f627cb1b25917193a259e49bdad08f671f8d9708acfd5fe0a8c1455d87220"
 
 [[package]]
 name = "percentage"
@@ -4073,7 +4081,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1db05f56d34358a8b1066f67cbb203ee3e7ed2ba674a6263a1d5ec6db2204323"
 dependencies = [
  "memchr",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
  "ucd-trie",
 ]
 
@@ -4164,7 +4172,7 @@ version = "0.6.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9d1fe60d06143b2430aa532c94cfe9e29783047f06c0d7fd359a9a51b729fa25"
 dependencies = [
- "cfg-if 1.0.1",
+ "cfg-if 1.0.3",
  "cpufeatures",
  "opaque-debug",
  "universal-hash",
@@ -4305,9 +4313,9 @@ dependencies = [
 
 [[package]]
 name = "proc-macro2"
-version = "1.0.99"
+version = "1.0.101"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "56b3997d62ff36d1d0e5616f1e00c4b071680eb3769d56102663c1f0886971e1"
+checksum = "89ae43fd86e4158d6db51ad8e2b80f313af9cc74f5c0e03ccb87de09998732de"
 dependencies = [
  "unicode-ident",
 ]
@@ -4381,7 +4389,7 @@ version = "0.7.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d464fae65fff2680baf48019211ce37aaec0c78e9264c84a3e484717f965104e"
 dependencies = [
- "percent-encoding 2.3.1",
+ "percent-encoding 2.3.2",
 ]
 
 [[package]]
@@ -4424,7 +4432,7 @@ dependencies = [
  "rustc-hash 2.1.1",
  "rustls 0.23.31",
  "socket2 0.5.10",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
  "tokio",
  "tracing",
  "web-time",
@@ -4447,7 +4455,7 @@ dependencies = [
  "rustls-pki-types",
  "rustls-platform-verifier",
  "slab",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
  "tinyvec",
  "tracing",
  "web-time",
@@ -4736,7 +4744,7 @@ dependencies = [
  "mime",
  "native-tls",
  "once_cell",
- "percent-encoding 2.3.1",
+ "percent-encoding 2.3.2",
  "pin-project-lite",
  "rustls-pemfile",
  "serde",
@@ -4747,7 +4755,7 @@ dependencies = [
  "tokio",
  "tokio-native-tls",
  "tower-service",
- "url 2.5.4",
+ "url 2.5.6",
  "wasm-bindgen",
  "wasm-bindgen-futures",
  "web-sys",
@@ -4769,12 +4777,12 @@ dependencies = [
  "http 1.3.1",
  "http-body 1.0.1",
  "http-body-util",
- "hyper 1.6.0",
+ "hyper 1.7.0",
  "hyper-rustls",
  "hyper-util",
  "js-sys",
  "log",
- "percent-encoding 2.3.1",
+ "percent-encoding 2.3.2",
  "pin-project-lite",
  "quinn",
  "rustls 0.23.31",
@@ -4789,7 +4797,7 @@ dependencies = [
  "tower 0.5.2",
  "tower-http",
  "tower-service",
- "url 2.5.4",
+ "url 2.5.6",
  "wasm-bindgen",
  "wasm-bindgen-futures",
  "web-sys",
@@ -4818,7 +4826,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a4689e6c2294d81e88dc6261c768b63bc4fcdb852be6d1352498b114f61383b7"
 dependencies = [
  "cc",
- "cfg-if 1.0.1",
+ "cfg-if 1.0.3",
  "getrandom 0.2.16",
  "libc",
  "untrusted",
@@ -5178,9 +5186,9 @@ dependencies = [
 
 [[package]]
 name = "serde_json"
-version = "1.0.142"
+version = "1.0.143"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "030fedb782600dcbd6f02d479bf0d817ac3bb40d644745b769d6a96bc3afc5a7"
+checksum = "d401abef1d108fbd9cbaebc3e46611f4b1021f714a0597a71f41ee463f5f4a5a"
 dependencies = [
  "itoa",
  "memchr",
@@ -5243,7 +5251,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "99cd6713db3cf16b6c84e06321e049a9b9f699826e16096d23bbcc44d15d51a6"
 dependencies = [
  "block-buffer 0.9.0",
- "cfg-if 1.0.1",
+ "cfg-if 1.0.3",
  "cpufeatures",
  "digest 0.9.0",
  "opaque-debug",
@@ -5255,7 +5263,7 @@ version = "0.10.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e3bf829a2d51ab4a5ddf1352d8470c140cadc8301b2ae1789db023f01cedd6ba"
 dependencies = [
- "cfg-if 1.0.1",
+ "cfg-if 1.0.3",
  "cpufeatures",
  "digest 0.10.7",
 ]
@@ -5267,7 +5275,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4d58a1e1bf39749807d89cf2d98ac2dfa0ff1cb3faa38fbb64dd88ac8013d800"
 dependencies = [
  "block-buffer 0.9.0",
- "cfg-if 1.0.1",
+ "cfg-if 1.0.3",
  "cpufeatures",
  "digest 0.9.0",
  "opaque-debug",
@@ -5279,7 +5287,7 @@ version = "0.10.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a7507d819769d01a365ab707794a4084392c824f54a7a6a7862f8c3d0892b283"
 dependencies = [
- "cfg-if 1.0.1",
+ "cfg-if 1.0.3",
  "cpufeatures",
  "digest 0.10.7",
 ]
@@ -5463,7 +5471,7 @@ dependencies = [
 [[package]]
 name = "solana-account-decoder"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "Inflector",
  "base64 0.22.1",
@@ -5498,14 +5506,14 @@ dependencies = [
  "spl-token-group-interface",
  "spl-token-interface",
  "spl-token-metadata-interface",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
  "zstd",
 ]
 
 [[package]]
 name = "solana-account-decoder-client-types"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "base64 0.22.1",
  "bs58",
@@ -5533,7 +5541,7 @@ dependencies = [
 [[package]]
 name = "solana-accounts-db"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "agave-io-uring",
  "ahash 0.8.12",
@@ -5551,7 +5559,7 @@ dependencies = [
  "libc",
  "log",
  "lz4",
- "memmap2 0.9.7",
+ "memmap2 0.9.8",
  "modular-bitfield",
  "num_cpus",
  "num_enum",
@@ -5591,7 +5599,7 @@ dependencies = [
  "static_assertions",
  "tar",
  "tempfile",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
 ]
 
 [[package]]
@@ -5623,7 +5631,7 @@ dependencies = [
 [[package]]
 name = "solana-banks-client"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "borsh 1.5.7",
  "futures 0.3.31",
@@ -5642,7 +5650,7 @@ dependencies = [
  "solana-transaction-context 3.0.0",
  "solana-transaction-error",
  "tarpc",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
  "tokio",
  "tokio-serde",
 ]
@@ -5650,7 +5658,7 @@ dependencies = [
 [[package]]
 name = "solana-banks-interface"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "serde",
  "serde_derive",
@@ -5670,7 +5678,7 @@ dependencies = [
 [[package]]
 name = "solana-banks-server"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "agave-feature-set",
  "bincode",
@@ -5733,7 +5741,7 @@ dependencies = [
 [[package]]
 name = "solana-bloom"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "bv",
  "fnv",
@@ -5756,7 +5764,7 @@ dependencies = [
  "ark-serialize",
  "bytemuck",
  "solana-define-syscall",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
 ]
 
 [[package]]
@@ -5772,7 +5780,7 @@ dependencies = [
 [[package]]
 name = "solana-bpf-loader-program"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "agave-syscalls",
  "bincode",
@@ -5800,12 +5808,12 @@ dependencies = [
 [[package]]
 name = "solana-bucket-map"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "bv",
  "bytemuck",
  "bytemuck_derive",
- "memmap2 0.9.7",
+ "memmap2 0.9.8",
  "modular-bitfield",
  "num_enum",
  "rand 0.8.5",
@@ -5818,7 +5826,7 @@ dependencies = [
 [[package]]
 name = "solana-builtins"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "agave-feature-set",
  "solana-bpf-loader-program",
@@ -5838,7 +5846,7 @@ dependencies = [
 [[package]]
 name = "solana-builtins-default-costs"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "agave-feature-set",
  "ahash 0.8.12",
@@ -5856,7 +5864,7 @@ dependencies = [
 [[package]]
 name = "solana-clap-utils"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "chrono",
  "clap",
@@ -5875,16 +5883,16 @@ dependencies = [
  "solana-seed-phrase",
  "solana-signature",
  "solana-signer",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
  "tiny-bip39",
  "uriparse",
- "url 2.5.4",
+ "url 2.5.6",
 ]
 
 [[package]]
 name = "solana-cli-config"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "dirs-next",
  "serde",
@@ -5892,13 +5900,13 @@ dependencies = [
  "serde_yaml",
  "solana-clap-utils",
  "solana-commitment-config",
- "url 2.5.4",
+ "url 2.5.6",
 ]
 
 [[package]]
 name = "solana-cli-output"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "Inflector",
  "agave-reserved-account-keys",
@@ -5941,7 +5949,7 @@ dependencies = [
 [[package]]
 name = "solana-client"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "async-trait",
  "bincode",
@@ -5979,7 +5987,7 @@ dependencies = [
  "solana-transaction-error",
  "solana-transaction-status-client-types",
  "solana-udp-client",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
  "tokio",
 ]
 
@@ -6041,7 +6049,7 @@ dependencies = [
 [[package]]
 name = "solana-compute-budget"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "solana-fee-structure",
  "solana-program-runtime",
@@ -6050,7 +6058,7 @@ dependencies = [
 [[package]]
 name = "solana-compute-budget-instruction"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "agave-feature-set",
  "log",
@@ -6064,7 +6072,7 @@ dependencies = [
  "solana-sdk-ids",
  "solana-svm-transaction",
  "solana-transaction-error",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
 ]
 
 [[package]]
@@ -6083,7 +6091,7 @@ dependencies = [
 [[package]]
 name = "solana-compute-budget-program"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "solana-program-runtime",
 ]
@@ -6122,7 +6130,7 @@ dependencies = [
 [[package]]
 name = "solana-connection-cache"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "async-trait",
  "bincode",
@@ -6137,14 +6145,14 @@ dependencies = [
  "solana-metrics",
  "solana-time-utils",
  "solana-transaction-error",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
  "tokio",
 ]
 
 [[package]]
 name = "solana-core"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "agave-banking-stage-ingress-types",
  "agave-feature-set",
@@ -6270,7 +6278,7 @@ dependencies = [
  "sys-info",
  "sysctl",
  "tempfile",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
  "tikv-jemallocator",
  "tokio",
  "tokio-util 0.7.16",
@@ -6280,7 +6288,7 @@ dependencies = [
 [[package]]
 name = "solana-cost-model"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "agave-feature-set",
  "ahash 0.8.12",
@@ -6329,20 +6337,20 @@ dependencies = [
  "curve25519-dalek 4.1.3",
  "solana-define-syscall",
  "subtle",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
 ]
 
 [[package]]
 name = "solana-curve25519"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "bytemuck",
  "bytemuck_derive",
  "curve25519-dalek 4.1.3",
  "solana-define-syscall",
  "subtle",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
 ]
 
 [[package]]
@@ -6389,7 +6397,7 @@ dependencies = [
 [[package]]
 name = "solana-entry"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "bincode",
  "crossbeam-channel",
@@ -6477,13 +6485,13 @@ dependencies = [
  "solana-pubkey",
  "solana-sdk-ids",
  "solana-system-interface",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
 ]
 
 [[package]]
 name = "solana-faucet"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "bincode",
  "clap",
@@ -6508,7 +6516,7 @@ dependencies = [
  "solana-transaction",
  "solana-version",
  "spl-memo-interface",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
  "tokio",
 ]
 
@@ -6548,7 +6556,7 @@ dependencies = [
 [[package]]
 name = "solana-fee"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "agave-feature-set",
  "solana-fee-structure",
@@ -6611,7 +6619,7 @@ dependencies = [
 [[package]]
 name = "solana-geyser-plugin-manager"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "agave-geyser-plugin-interface",
  "bs58",
@@ -6635,14 +6643,14 @@ dependencies = [
  "solana-signature",
  "solana-transaction",
  "solana-transaction-status",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
  "tokio",
 ]
 
 [[package]]
 name = "solana-gossip"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "agave-feature-set",
  "arrayvec",
@@ -6704,7 +6712,7 @@ dependencies = [
  "solana-vote",
  "solana-vote-program",
  "static_assertions",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
 ]
 
 [[package]]
@@ -6827,7 +6835,7 @@ dependencies = [
 [[package]]
 name = "solana-lattice-hash"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "base64 0.22.1",
  "blake3",
@@ -6838,7 +6846,7 @@ dependencies = [
 [[package]]
 name = "solana-ledger"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "agave-feature-set",
  "agave-reserved-account-keys",
@@ -6927,7 +6935,7 @@ dependencies = [
  "strum_macros 0.24.3",
  "tar",
  "tempfile",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
  "tokio",
  "tokio-stream",
  "trees",
@@ -6980,7 +6988,7 @@ dependencies = [
 [[package]]
 name = "solana-loader-v4-program"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "log",
  "qualifier_attr",
@@ -7030,17 +7038,17 @@ dependencies = [
 [[package]]
 name = "solana-low-pass-filter"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 
 [[package]]
 name = "solana-measure"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 
 [[package]]
 name = "solana-merkle-tree"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "fast-math",
  "solana-hash",
@@ -7073,7 +7081,7 @@ dependencies = [
 [[package]]
 name = "solana-metrics"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "crossbeam-channel",
  "gethostname",
@@ -7082,7 +7090,7 @@ dependencies = [
  "solana-cluster-type",
  "solana-sha256-hasher",
  "solana-time-utils",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
 ]
 
 [[package]]
@@ -7103,7 +7111,7 @@ checksum = "307fb2f78060995979e9b4f68f833623565ed4e55d3725f100454ce78a99a1a3"
 [[package]]
 name = "solana-net-utils"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "anyhow",
  "bincode",
@@ -7117,7 +7125,7 @@ dependencies = [
  "socket2 0.6.0",
  "solana-serde",
  "tokio",
- "url 2.5.4",
+ "url 2.5.6",
 ]
 
 [[package]]
@@ -7185,7 +7193,7 @@ dependencies = [
 [[package]]
 name = "solana-perf"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "ahash 0.8.12",
  "bincode",
@@ -7216,7 +7224,7 @@ dependencies = [
 [[package]]
 name = "solana-poh"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "arc-swap",
  "core_affinity",
@@ -7234,7 +7242,7 @@ dependencies = [
  "solana-runtime",
  "solana-time-utils",
  "solana-transaction",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
 ]
 
 [[package]]
@@ -7250,12 +7258,12 @@ dependencies = [
 [[package]]
 name = "solana-poseidon"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "ark-bn254",
  "light-poseidon",
  "solana-define-syscall",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
 ]
 
 [[package]]
@@ -7372,7 +7380,7 @@ dependencies = [
  "solana-sysvar",
  "solana-sysvar-id",
  "solana-vote-interface",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
  "wasm-bindgen",
 ]
 
@@ -7431,7 +7439,7 @@ dependencies = [
 [[package]]
 name = "solana-program-runtime"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "base64 0.22.1",
  "bincode",
@@ -7471,7 +7479,7 @@ dependencies = [
 [[package]]
 name = "solana-program-test"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "agave-feature-set",
  "assert_matches",
@@ -7526,7 +7534,7 @@ dependencies = [
  "solana-transaction-error",
  "solana-vote-program",
  "spl-generic-token",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
  "tokio",
 ]
 
@@ -7560,7 +7568,7 @@ dependencies = [
 [[package]]
 name = "solana-pubsub-client"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "crossbeam-channel",
  "futures-util",
@@ -7575,18 +7583,18 @@ dependencies = [
  "solana-pubkey",
  "solana-rpc-client-types",
  "solana-signature",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
  "tokio",
  "tokio-stream",
  "tokio-tungstenite",
  "tungstenite",
- "url 2.5.4",
+ "url 2.5.6",
 ]
 
 [[package]]
 name = "solana-quic-client"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "async-lock",
  "async-trait",
@@ -7608,7 +7616,7 @@ dependencies = [
  "solana-streamer",
  "solana-tls-utils",
  "solana-transaction-error",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
  "tokio",
 ]
 
@@ -7624,7 +7632,7 @@ dependencies = [
 [[package]]
 name = "solana-rayon-threadlimit"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "log",
  "num_cpus",
@@ -7633,7 +7641,7 @@ dependencies = [
 [[package]]
 name = "solana-remote-wallet"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "console 0.16.0",
  "dialoguer",
@@ -7649,7 +7657,7 @@ dependencies = [
  "solana-pubkey",
  "solana-signature",
  "solana-signer",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
  "uriparse",
 ]
 
@@ -7718,7 +7726,7 @@ dependencies = [
 [[package]]
 name = "solana-rpc"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "agave-feature-set",
  "base64 0.22.1",
@@ -7795,7 +7803,7 @@ dependencies = [
  "spl-token-2022-interface",
  "spl-token-interface",
  "stream-cancel",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
  "tokio",
  "tokio-util 0.7.16",
 ]
@@ -7803,7 +7811,7 @@ dependencies = [
 [[package]]
 name = "solana-rpc-client"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "async-trait",
  "base64 0.22.1",
@@ -7842,7 +7850,7 @@ dependencies = [
 [[package]]
 name = "solana-rpc-client-api"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "anyhow",
  "jsonrpc-core",
@@ -7857,13 +7865,13 @@ dependencies = [
  "solana-signer",
  "solana-transaction-error",
  "solana-transaction-status-client-types",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
 ]
 
 [[package]]
 name = "solana-rpc-client-nonce-utils"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "solana-account",
  "solana-commitment-config",
@@ -7873,13 +7881,13 @@ dependencies = [
  "solana-pubkey",
  "solana-rpc-client",
  "solana-sdk-ids",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
 ]
 
 [[package]]
 name = "solana-rpc-client-types"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "base64 0.22.1",
  "bs58",
@@ -7898,13 +7906,13 @@ dependencies = [
  "solana-transaction-status-client-types",
  "solana-version",
  "spl-generic-token",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
 ]
 
 [[package]]
 name = "solana-runtime"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "agave-feature-set",
  "agave-precompiles",
@@ -7929,7 +7937,7 @@ dependencies = [
  "libc",
  "log",
  "lz4",
- "memmap2 0.9.7",
+ "memmap2 0.9.8",
  "mockall",
  "modular-bitfield",
  "num-derive",
@@ -8030,14 +8038,14 @@ dependencies = [
  "symlink",
  "tar",
  "tempfile",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
  "zstd",
 ]
 
 [[package]]
 name = "solana-runtime-transaction"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "agave-transaction-view",
  "log",
@@ -8051,7 +8059,7 @@ dependencies = [
  "solana-svm-transaction",
  "solana-transaction",
  "solana-transaction-error",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
 ]
 
 [[package]]
@@ -8073,7 +8081,7 @@ dependencies = [
  "log",
  "rand 0.8.5",
  "rustc-demangle",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
  "winapi 0.3.9",
 ]
 
@@ -8144,7 +8152,7 @@ dependencies = [
  "solana-transaction-context 2.3.7",
  "solana-transaction-error",
  "solana-validator-exit",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
  "wasm-bindgen",
 ]
 
@@ -8197,7 +8205,7 @@ dependencies = [
  "borsh 1.5.7",
  "libsecp256k1",
  "solana-define-syscall",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
 ]
 
 [[package]]
@@ -8237,7 +8245,7 @@ dependencies = [
 [[package]]
 name = "solana-send-transaction-service"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "async-trait",
  "crossbeam-channel",
@@ -8407,7 +8415,7 @@ dependencies = [
 [[package]]
 name = "solana-stake-program"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "agave-feature-set",
  "bincode",
@@ -8435,7 +8443,7 @@ dependencies = [
 [[package]]
 name = "solana-storage-bigtable"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "agave-reserved-account-keys",
  "backoff",
@@ -8467,7 +8475,7 @@ dependencies = [
  "solana-transaction",
  "solana-transaction-error",
  "solana-transaction-status",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
  "tokio",
  "tonic",
  "zstd",
@@ -8476,7 +8484,7 @@ dependencies = [
 [[package]]
 name = "solana-storage-proto"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "bincode",
  "bs58",
@@ -8500,7 +8508,7 @@ dependencies = [
 [[package]]
 name = "solana-streamer"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "arc-swap",
  "async-channel",
@@ -8539,7 +8547,7 @@ dependencies = [
  "solana-tls-utils",
  "solana-transaction-error",
  "solana-transaction-metrics-tracker",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
  "tokio",
  "tokio-util 0.7.16",
  "x509-parser",
@@ -8548,7 +8556,7 @@ dependencies = [
 [[package]]
 name = "solana-svm"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "ahash 0.8.12",
  "log",
@@ -8585,13 +8593,13 @@ dependencies = [
  "solana-transaction-context 3.0.0",
  "solana-transaction-error",
  "spl-generic-token",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
 ]
 
 [[package]]
 name = "solana-svm-callback"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "solana-account",
  "solana-clock",
@@ -8602,12 +8610,12 @@ dependencies = [
 [[package]]
 name = "solana-svm-feature-set"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 
 [[package]]
 name = "solana-svm-log-collector"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "log",
 ]
@@ -8615,12 +8623,12 @@ dependencies = [
 [[package]]
 name = "solana-svm-measure"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 
 [[package]]
 name = "solana-svm-metrics"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "crossbeam-channel",
  "gethostname",
@@ -8629,13 +8637,13 @@ dependencies = [
  "solana-cluster-type",
  "solana-sha256-hasher",
  "solana-time-utils",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
 ]
 
 [[package]]
 name = "solana-svm-timings"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "eager",
  "enum-iterator",
@@ -8645,7 +8653,7 @@ dependencies = [
 [[package]]
 name = "solana-svm-transaction"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "solana-hash",
  "solana-message",
@@ -8658,7 +8666,7 @@ dependencies = [
 [[package]]
 name = "solana-svm-type-overrides"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "rand 0.8.5",
 ]
@@ -8682,7 +8690,7 @@ dependencies = [
 [[package]]
 name = "solana-system-program"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "bincode",
  "log",
@@ -8770,7 +8778,7 @@ dependencies = [
 [[package]]
 name = "solana-test-validator"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "agave-feature-set",
  "base64 0.22.1",
@@ -8826,7 +8834,7 @@ checksum = "6af261afb0e8c39252a04d026e3ea9c405342b08c871a2ad8aa5448e068c784c"
 [[package]]
 name = "solana-tls-utils"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "rustls 0.23.31",
  "solana-keypair",
@@ -8838,7 +8846,7 @@ dependencies = [
 [[package]]
 name = "solana-tpu-client"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "async-trait",
  "bincode",
@@ -8864,14 +8872,14 @@ dependencies = [
  "solana-signer",
  "solana-transaction",
  "solana-transaction-error",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
  "tokio",
 ]
 
 [[package]]
 name = "solana-tpu-client-next"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "async-trait",
  "log",
@@ -8889,7 +8897,7 @@ dependencies = [
  "solana-time-utils",
  "solana-tls-utils",
  "solana-tpu-client",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
  "tokio",
  "tokio-util 0.7.16",
 ]
@@ -8941,7 +8949,7 @@ dependencies = [
 [[package]]
 name = "solana-transaction-context"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "bincode",
  "serde",
@@ -8970,7 +8978,7 @@ dependencies = [
 [[package]]
 name = "solana-transaction-metrics-tracker"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "base64 0.22.1",
  "bincode",
@@ -8985,7 +8993,7 @@ dependencies = [
 [[package]]
 name = "solana-transaction-status"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "Inflector",
  "agave-reserved-account-keys",
@@ -9022,13 +9030,13 @@ dependencies = [
  "spl-token-group-interface",
  "spl-token-interface",
  "spl-token-metadata-interface",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
 ]
 
 [[package]]
 name = "solana-transaction-status-client-types"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "base64 0.22.1",
  "bincode",
@@ -9046,13 +9054,13 @@ dependencies = [
  "solana-transaction",
  "solana-transaction-context 3.0.0",
  "solana-transaction-error",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
 ]
 
 [[package]]
 name = "solana-turbine"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "agave-feature-set",
  "agave-xdp",
@@ -9097,14 +9105,14 @@ dependencies = [
  "solana-tls-utils",
  "solana-transaction-error",
  "static_assertions",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
  "tokio",
 ]
 
 [[package]]
 name = "solana-udp-client"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "async-trait",
  "solana-connection-cache",
@@ -9112,14 +9120,14 @@ dependencies = [
  "solana-net-utils",
  "solana-streamer",
  "solana-transaction-error",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
  "tokio",
 ]
 
 [[package]]
 name = "solana-unified-scheduler-logic"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "assert_matches",
  "solana-pubkey",
@@ -9132,7 +9140,7 @@ dependencies = [
 [[package]]
 name = "solana-unified-scheduler-pool"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "agave-banking-stage-ingress-types",
  "aquamarine",
@@ -9173,7 +9181,7 @@ checksum = "7bbf6d7a3c0b28dd5335c52c0e9eae49d0ae489a8f324917faf0ded65a812c1d"
 [[package]]
 name = "solana-version"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "agave-feature-set",
  "rand 0.8.5",
@@ -9187,7 +9195,7 @@ dependencies = [
 [[package]]
 name = "solana-vote"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "itertools 0.12.1",
  "log",
@@ -9208,7 +9216,7 @@ dependencies = [
  "solana-svm-transaction",
  "solana-transaction",
  "solana-vote-interface",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
 ]
 
 [[package]]
@@ -9238,7 +9246,7 @@ dependencies = [
 [[package]]
 name = "solana-vote-program"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "agave-feature-set",
  "bincode",
@@ -9264,13 +9272,13 @@ dependencies = [
  "solana-transaction",
  "solana-transaction-context 3.0.0",
  "solana-vote-interface",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
 ]
 
 [[package]]
 name = "solana-wen-restart"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "anyhow",
  "log",
@@ -9297,7 +9305,7 @@ dependencies = [
 [[package]]
 name = "solana-zk-elgamal-proof-program"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "agave-feature-set",
  "bytemuck",
@@ -9341,7 +9349,7 @@ dependencies = [
  "solana-signature",
  "solana-signer",
  "subtle",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
  "wasm-bindgen",
  "zeroize",
 ]
@@ -9377,7 +9385,7 @@ dependencies = [
  "solana-signature",
  "solana-signer",
  "subtle",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
  "wasm-bindgen",
  "zeroize",
 ]
@@ -9385,7 +9393,7 @@ dependencies = [
 [[package]]
 name = "solana-zk-token-proof-program"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "agave-feature-set",
  "bytemuck",
@@ -9401,7 +9409,7 @@ dependencies = [
 [[package]]
 name = "solana-zk-token-sdk"
 version = "3.0.0"
-source = "git+https://github.com/febo/agave.git?branch=p-token-migration#8544810f532892863adfca90efb2ef3f8a8db808"
+source = "git+https://github.com/febo/agave.git?branch=p-token-swap#1c86a5436620bc3270cddc012227aa44138b024a"
 dependencies = [
  "aes-gcm-siv",
  "base64 0.22.1",
@@ -9428,7 +9436,7 @@ dependencies = [
  "solana-signature",
  "solana-signer",
  "subtle",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
  "zeroize",
 ]
 
@@ -9531,7 +9539,7 @@ dependencies = [
  "solana-program-option",
  "solana-pubkey",
  "solana-zk-sdk 2.3.7",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
 ]
 
 [[package]]
@@ -9561,7 +9569,7 @@ dependencies = [
  "spl-token-group-interface",
  "spl-token-metadata-interface",
  "spl-type-length-value",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
 ]
 
 [[package]]
@@ -9581,7 +9589,7 @@ dependencies = [
  "solana-sdk-ids",
  "solana-zk-sdk 2.3.7",
  "spl-pod",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
 ]
 
 [[package]]
@@ -9592,7 +9600,7 @@ checksum = "fa27b9174bea869a7ebf31e0be6890bce90b1a4288bc2bbf24bd413f80ae3fde"
 dependencies = [
  "curve25519-dalek 4.1.3",
  "solana-zk-sdk 2.3.7",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
 ]
 
 [[package]]
@@ -9611,7 +9619,7 @@ dependencies = [
  "solana-pubkey",
  "spl-discriminator",
  "spl-pod",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
 ]
 
 [[package]]
@@ -9631,7 +9639,7 @@ dependencies = [
  "solana-program-pack",
  "solana-pubkey",
  "solana-sdk-ids",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
 ]
 
 [[package]]
@@ -9652,7 +9660,7 @@ dependencies = [
  "spl-discriminator",
  "spl-pod",
  "spl-type-length-value",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
 ]
 
 [[package]]
@@ -9670,7 +9678,7 @@ dependencies = [
  "solana-program-error",
  "spl-discriminator",
  "spl-pod",
- "thiserror 2.0.15",
+ "thiserror 2.0.16",
 ]
 
 [[package]]
@@ -9916,15 +9924,15 @@ dependencies = [
 
 [[package]]
 name = "tempfile"
-version = "3.20.0"
+version = "3.21.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e8a64e3985349f2441a1a9ef0b853f869006c3855f2cda6862a94d26ebb9d6a1"
+checksum = "15b61f8f20e3a6f7e0649d825294eaf317edce30f82cf6026e7e4cb9222a7d1e"
 dependencies = [
  "fastrand",
  "getrandom 0.3.3",
  "once_cell",
  "rustix 1.0.8",
- "windows-sys 0.59.0",
+ "windows-sys 0.60.2",
 ]
 
 [[package]]
@@ -9962,11 +9970,11 @@ dependencies = [
 
 [[package]]
 name = "thiserror"
-version = "2.0.15"
+version = "2.0.16"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "80d76d3f064b981389ecb4b6b7f45a0bf9fdac1d5b9204c7bd6714fecc302850"
+checksum = "3467d614147380f2e4e374161426ff399c91084acd2363eaf549172b3d5e60c0"
 dependencies = [
- "thiserror-impl 2.0.15",
+ "thiserror-impl 2.0.16",
 ]
 
 [[package]]
@@ -9982,9 +9990,9 @@ dependencies = [
 
 [[package]]
 name = "thiserror-impl"
-version = "2.0.15"
+version = "2.0.16"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "44d29feb33e986b6ea906bd9c3559a856983f92371b3eaa5e83782a351623de0"
+checksum = "6c5e1be1c48b9172ee610da68fd9cd2770e7a4056cb3fc98710ee6906f0c7960"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -9997,7 +10005,7 @@ version = "1.1.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f60246a4944f24f6e018aa17cdeffb7818b76356965d03b07d6a9886e8962185"
 dependencies = [
- "cfg-if 1.0.1",
+ "cfg-if 1.0.3",
 ]
 
 [[package]]
@@ -10082,9 +10090,9 @@ dependencies = [
 
 [[package]]
 name = "tinyvec"
-version = "1.9.0"
+version = "1.10.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "09b3661f17e86524eccd4371ab0429194e0d7c008abb45f7a7495b1719463c71"
+checksum = "bfa5fdc3bce6191a1dbc8c02d5c8bffcf557bafa17c124c5264a458f1b0613fa"
 dependencies = [
  "tinyvec_macros",
 ]
@@ -10281,7 +10289,7 @@ dependencies = [
  "http-body 0.4.6",
  "hyper 0.14.32",
  "hyper-timeout",
- "percent-encoding 2.3.1",
+ "percent-encoding 2.3.2",
  "pin-project",
  "prost",
  "rustls-pemfile",
@@ -10468,7 +10476,7 @@ dependencies = [
  "rustls 0.21.12",
  "sha1",
  "thiserror 1.0.69",
- "url 2.5.4",
+ "url 2.5.6",
  "utf-8",
  "webpki-roots 0.24.0",
 ]
@@ -10613,13 +10621,13 @@ dependencies = [
 
 [[package]]
 name = "url"
-version = "2.5.4"
+version = "2.5.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "32f8b686cadd1473f4bd0117a5d28d36b1ade384ea9b5069a1c40aefed7fda60"
+checksum = "137a3c834eaf7139b73688502f3f1141a0337c5d8e4d9b536f9b8c796e26a7c4"
 dependencies = [
  "form_urlencoded",
- "idna 1.0.3",
- "percent-encoding 2.3.1",
+ "idna 1.1.0",
+ "percent-encoding 2.3.2",
 ]
 
 [[package]]
@@ -10722,7 +10730,7 @@ version = "0.2.100"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "1edc8929d7499fc4e8f0be2262a241556cfc54a0bea223790e71446f2aab1ef5"
 dependencies = [
- "cfg-if 1.0.1",
+ "cfg-if 1.0.3",
  "once_cell",
  "rustversion",
  "wasm-bindgen-macro",
@@ -10748,7 +10756,7 @@ version = "0.4.50"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "555d470ec0bc3bb57890405e5d4322cc9ea83cebb085523ced7be4144dac1e61"
 dependencies = [
- "cfg-if 1.0.1",
+ "cfg-if 1.0.3",
  "js-sys",
  "once_cell",
  "wasm-bindgen",
@@ -10901,11 +10909,11 @@ checksum = "ac3b87c63620426dd9b991e5ce0329eff545bccbbb34f3be09ff6fb6ab51b7b6"
 
 [[package]]
 name = "winapi-util"
-version = "0.1.9"
+version = "0.1.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "cf221c93e13a30d793f7645a0e7762c55d169dbb0a49671918a2319d289b10bb"
+checksum = "0978bf7171b3d90bac376700cb56d606feb40f251a475a5d6634613564460b22"
 dependencies = [
- "windows-sys 0.59.0",
+ "windows-sys 0.60.2",
 ]
 
 [[package]]
@@ -11276,7 +11284,7 @@ version = "0.50.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "524e57b2c537c0f9b1e69f1965311ec12182b4122e45035b1508cd24d2adadb1"
 dependencies = [
- "cfg-if 1.0.1",
+ "cfg-if 1.0.3",
  "windows-sys 0.48.0",
 ]
 

@@ -8,7 +8,7 @@ name = "simulate"
 path = "src/main.rs"
 
 [dependencies]
-agave-feature-set = { git = "https://github.com/febo/agave.git", branch = "p-token-migration" }
+agave-feature-set = { git = "https://github.com/febo/agave.git", branch = "p-token-swap" }
 cbmt-program-activator = { workspace = true }
 cbmt-program-stub = { workspace = true }
 indicatif = { version = "0.18.0", features = ["tokio"] }
