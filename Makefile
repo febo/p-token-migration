@@ -27,8 +27,7 @@ build-p-token:
 
 
 build-programs:
-	@cargo build-sbf --manifest-path programs/activator/Cargo.toml --features sbf-entrypoint
-	@cargo build-sbf --manifest-path programs/stub/Cargo.toml --features sbf-entrypoint
+	@cargo build-sbf --manifest-path programs/activator/Cargo.toml --features sbf-entrypoint --tools-version v1.51
 	@mkdir -p target/elfs
 	@cp target/deploy/cbmt_program_activator.so target/elfs/cbmt_program_activator.so
 

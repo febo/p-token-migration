@@ -6,19 +6,18 @@
 use {
     crate::file::FileReader,
     indicatif::{ProgressBar, ProgressStyle},
+    solana_feature_gate_interface::Feature,
+    solana_loader_v3_interface::state::UpgradeableLoaderState,
     solana_rpc::rpc::JsonRpcConfig,
+    solana_rpc_client_api::config::CommitmentConfig,
     solana_sdk::{
         account::{Account, AccountSharedData, WritableAccount},
-        bpf_loader_upgradeable::{self, UpgradeableLoaderState},
-        commitment_config::CommitmentConfig,
         epoch_schedule::EpochSchedule,
-        feature::Feature,
         instruction::Instruction,
         pubkey::Pubkey,
         rent::Rent,
         signature::{Keypair, Signature},
         signer::Signer,
-        system_instruction,
         transaction::Transaction,
     },
     solana_test_validator::{TestValidator, TestValidatorGenesis, UpgradeableProgramInfo},
@@ -140,7 +139,7 @@ impl ValidatorContext {
 
         let bpf_programs = &[UpgradeableProgramInfo {
             program_id: cbmt_program_activator::id(),
-            loader: bpf_loader_upgradeable::id(),
+            loader: solana_sdk_ids::bpf_loader_upgradeable::id(),
             program_path: elf_path(elf_directory, "cbmt_program_activator"),
             upgrade_authority: Pubkey::new_unique(),
         }];
@@ -184,7 +183,7 @@ fn buffer_account(file_reader: &FileReader, elf_name: &str) -> AccountSharedData
             authority_address: None,
         },
         space,
-        &bpf_loader_upgradeable::id(),
+        &solana_sdk_ids::bpf_loader_upgradeable::id(),
     )
     .unwrap();
     account.data_as_mut_slice()[UpgradeableLoaderState::size_of_buffer_metadata()..]

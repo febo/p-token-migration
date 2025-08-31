@@ -70,7 +70,7 @@ async fn main() -> Result<()> {
 
     for i in 0..CLIENT_THREADS {
         let rpc_client = context.test_validator.get_async_rpc_client();
-        let payer = Keypair::from_bytes(&context.payer.to_bytes()).unwrap();
+        let payer = Keypair::try_from(context.payer.to_bytes().as_slice()).unwrap();
 
         let pb = progress.add(ProgressBar::no_length());
         spawn(async move { start_client(i + 1, pb, rpc_client, payer).await });
@@ -81,7 +81,7 @@ async fn main() -> Result<()> {
     // CU monitoring thread.
     {
         let rpc_client = context.test_validator.get_async_rpc_client();
-        let payer = Keypair::from_bytes(&context.payer.to_bytes()).unwrap();
+        let payer = Keypair::try_from(context.payer.to_bytes().as_slice()).unwrap();
         let upgraded = upgraded.clone();
 
         let pb = progress.add(ProgressBar::no_length());

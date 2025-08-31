@@ -12,10 +12,10 @@ use indicatif::{ProgressBar, ProgressStyle};
 use solana_rpc_client::nonblocking::rpc_client::RpcClient;
 use solana_rpc_client_api::{
     client_error::Error,
+    config::CommitmentConfig,
     response::{RpcResult, RpcSimulateTransactionResult},
 };
 use solana_sdk::{
-    commitment_config::CommitmentConfig,
     instruction::Instruction,
     program_pack::Pack,
     pubkey::Pubkey,
