@@ -96,8 +96,12 @@ async fn main() -> Result<()> {
 
     context.wait_for_next_epoch().await;
 
+    // Check that the program has been upgraded.
     context
-        .assert_owner(&SPL_TOKEN_PROGRAM_ID, &solana_sdk::bpf_loader::id())
+        .assert_owner(
+            &SPL_TOKEN_PROGRAM_ID,
+            &solana_sdk_ids::bpf_loader_upgradeable::id(),
+        )
         .await;
 
     upgraded.store(true, Ordering::SeqCst);
