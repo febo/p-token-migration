@@ -5,24 +5,32 @@
 
 use {
     crate::file::FileReader,
+    agave_snapshots::ArchiveFormat,
     indicatif::{ProgressBar, ProgressStyle},
     solana_feature_gate_interface::Feature,
     solana_loader_v3_interface::state::UpgradeableLoaderState,
     solana_rpc::rpc::JsonRpcConfig,
     solana_rpc_client_api::config::CommitmentConfig,
+    solana_runtime::{
+        bank::Bank, snapshot_archive_info::SnapshotArchiveInfoGetter,
+        snapshot_bank_utils::bank_to_full_snapshot_archive, snapshot_config::SnapshotConfig,
+        snapshot_utils,
+    },
     solana_sdk::{
         account::{Account, AccountSharedData, WritableAccount},
         epoch_schedule::EpochSchedule,
         instruction::Instruction,
         pubkey::Pubkey,
         rent::Rent,
-        signature::{Keypair, Signature},
+        signature::{read_keypair_file, write_keypair_file, Keypair, Signature},
         signer::Signer,
         transaction::Transaction,
     },
     solana_test_validator::{TestValidator, TestValidatorGenesis, UpgradeableProgramInfo},
-    std::path::PathBuf,
+    std::path::{Path, PathBuf},
 };
+
+pub const LEDGER_PATH: &str = "./target/migration-ledger";
 
 pub struct MigrationTarget<'a> {
     pub feature_id: Pubkey,
@@ -144,7 +152,9 @@ impl ValidatorContext {
             upgrade_authority: Pubkey::new_unique(),
         }];
 
+        let ledger_path = Path::new(LEDGER_PATH);
         let (test_validator, payer) = TestValidatorGenesis::default()
+            .ledger_path(ledger_path)
             .epoch_schedule(epoch_schedule)
             .deactivate_features(&deactivate_list)
             .add_accounts(accounts)
@@ -156,11 +166,36 @@ impl ValidatorContext {
             .start_async()
             .await;
 
+        let payer = if ledger_path.join("payer-keypair.json").exists() {
+            read_keypair_file(ledger_path.join("payer-keypair.json")).unwrap()
+        } else {
+            write_keypair_file(
+                &payer,
+                ledger_path.join("payer-keypair.json").to_str().unwrap(),
+            )
+            .unwrap();
+            payer
+        };
+
         Self {
             test_validator,
             payer,
             slots_per_epoch,
         }
+    }
+
+    fn create_snapshot(bank: &Bank, config: &SnapshotConfig) -> snapshot_utils::Result<String> {
+        Ok(bank_to_full_snapshot_archive(
+            &config.bank_snapshots_dir,
+            bank,
+            Some(config.snapshot_version),
+            &config.full_snapshot_archives_dir,
+            &config.incremental_snapshot_archives_dir,
+            config.archive_format,
+        )?
+        .path()
+        .display()
+        .to_string())
     }
 }
 

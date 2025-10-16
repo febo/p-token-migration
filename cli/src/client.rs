@@ -141,6 +141,7 @@ pub async fn start_client(
     progress_bar: ProgressBar,
     rpc_client: RpcClient,
     payer: Keypair,
+    interrupted: Arc<AtomicBool>,
 ) {
     progress_bar.set_style(ProgressStyle::with_template("[{elapsed_precise}] {msg}").unwrap());
 
@@ -150,7 +151,7 @@ pub async fn start_client(
     let mut success = 0;
     let mut error = 0;
 
-    loop {
+    while !interrupted.load(Ordering::SeqCst) {
         let instructions = vec![transfer(
             &SPL_TOKEN_PROGRAM_ID,
             &account_a,
@@ -186,6 +187,7 @@ pub async fn start_monitor(
     upgraded: Arc<AtomicBool>,
     rpc_client: RpcClient,
     payer: Keypair,
+    interrupted: Arc<AtomicBool>,
 ) {
     progress_bar.enable_steady_tick(Duration::from_millis(100));
     progress_bar
@@ -196,7 +198,7 @@ pub async fn start_monitor(
     let authority = Keypair::new();
     let (account_a, account_b) = create_accounts(&rpc_client, &payer, &authority).await;
 
-    loop {
+    while !interrupted.load(Ordering::SeqCst) {
         let instructions = vec![transfer(
             &SPL_TOKEN_PROGRAM_ID,
             &account_a,

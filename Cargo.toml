@@ -6,12 +6,14 @@ members = [
 resolver = "2"
 
 [workspace.dependencies]
+agave-snapshots = { git = "https://github.com/febo/agave.git", branch = "p-token-migration" }
 cbmt-program-activator = { path = "./programs/activator", version = "0.1.0" }
 solana-logger = "3.0"
 solana-program = "3.0"
 solana-rpc = { git = "https://github.com/febo/agave.git", branch = "p-token-migration" }
 solana-rpc-client = { git = "https://github.com/febo/agave.git", branch = "p-token-migration" }
 solana-rpc-client-api = { git = "https://github.com/febo/agave.git", branch = "p-token-migration" }
+solana-runtime = { git = "https://github.com/febo/agave.git", branch = "p-token-migration" }
 solana-sdk = "3.0"
 solana-test-validator = { git = "https://github.com/febo/agave.git", branch = "p-token-migration" }
 solana-transaction-status-client-types = { git = "https://github.com/febo/agave.git", branch = "p-token-migration" }

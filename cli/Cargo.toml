@@ -9,7 +9,9 @@ path = "src/main.rs"
 
 [dependencies]
 agave-feature-set = { version = "3.1", git = "https://github.com/febo/agave.git", branch = "p-token-migration" }
+agave-snapshots = { workspace = true }
 cbmt-program-activator = { workspace = true }
+ctrlc = "3.5.0"
 indicatif = { version = "0.18.0", features = ["tokio"] }
 ratatui = "0.29.0"
 solana-feature-gate-interface = "3.0"
@@ -19,6 +21,7 @@ solana-program = { workspace = true }
 solana-rpc = { workspace = true }
 solana-rpc-client = { workspace = true }
 solana-rpc-client-api = { workspace = true }
+solana-runtime = { workspace = true }
 solana-sdk = { workspace = true }
 solana-sdk-ids = "3.0"
 solana-system-interface = "2.0.0"

@@ -5,6 +5,9 @@ nightly = +$(subst ",,${RUST_TOOLCHAIN_NIGHTLY})
 clean:
 	cargo clean
 
+clean-ledger:
+	@rm -rf ./target/migration-ledger
+
 clippy:
 	cargo $(nightly) clippy
 
