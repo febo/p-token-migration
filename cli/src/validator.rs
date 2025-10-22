@@ -11,11 +11,6 @@ use {
     solana_loader_v3_interface::state::UpgradeableLoaderState,
     solana_rpc::rpc::JsonRpcConfig,
     solana_rpc_client_api::config::CommitmentConfig,
-    solana_runtime::{
-        bank::Bank, snapshot_archive_info::SnapshotArchiveInfoGetter,
-        snapshot_bank_utils::bank_to_full_snapshot_archive, snapshot_config::SnapshotConfig,
-        snapshot_utils,
-    },
     solana_sdk::{
         account::{Account, AccountSharedData, WritableAccount},
         epoch_schedule::EpochSchedule,
@@ -182,20 +177,6 @@ impl ValidatorContext {
             payer,
             slots_per_epoch,
         }
-    }
-
-    fn create_snapshot(bank: &Bank, config: &SnapshotConfig) -> snapshot_utils::Result<String> {
-        Ok(bank_to_full_snapshot_archive(
-            &config.bank_snapshots_dir,
-            bank,
-            Some(config.snapshot_version),
-            &config.full_snapshot_archives_dir,
-            &config.incremental_snapshot_archives_dir,
-            config.archive_format,
-        )?
-        .path()
-        .display()
-        .to_string())
     }
 }
 
