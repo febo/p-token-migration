@@ -23,14 +23,15 @@ build-cli:
 build-p-token:
 	@if [ ! -d target/token ]; then \
 		git clone https://github.com/solana-program/token.git target/token; \
+		git -C target/token checkout p-token@v1.0.0-rc.1; \
 	fi
-	@cd target/token && pnpm install && pnpm p-token:build --tools-version v1.51
+	@cd target/token && ARGS="--tools-version v1.54" make build-sbf-pinocchio-program
 	@mkdir -p target/elfs
 	@cp target/token/target/deploy/pinocchio_token_program.so target/elfs/p_token.so
 
 
 build-programs:
-	@cargo build-sbf --manifest-path programs/activator/Cargo.toml --features sbf-entrypoint --tools-version v1.51
+	@cargo build-sbf --manifest-path programs/activator/Cargo.toml --features sbf-entrypoint --tools-version v1.54
 	@mkdir -p target/elfs
 	@cp target/deploy/cbmt_program_activator.so target/elfs/cbmt_program_activator.so
 

@@ -8,7 +8,7 @@ name = "simulate"
 path = "src/main.rs"
 
 [dependencies]
-agave-feature-set = { version = "3.1", git = "https://github.com/febo/agave.git", branch = "p-token-migration" }
+agave-feature-set = { version = "3.1", git = "https://github.com/anza-xyz/agave.git", branch = "v3.1" }
 agave-snapshots = { workspace = true }
 cbmt-program-activator = { workspace = true }
 ctrlc = "3.5.0"
